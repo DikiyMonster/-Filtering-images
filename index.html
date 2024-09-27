@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Эффекты изображения</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="file" id="imageInput">
+        <button onclick="loadImage()">Загрузить изображение</button>
+        <img id="originalImage" src="#" alt="Original Image">
+        <button onclick="sharpenImage()">Повышение резкости изображения</button>
+        <button onclick="blurImage()">Размытие изображения</button>
+        <button onclick="embossImage()">Тиснение изображения</button>
+        <button onclick="medianFilter()">Медианный фильтр</button>
+        <button onclick="cannyEdgeDetection()">Обнаружение границ Канни</button>
+        <button onclick="robertsEdgeDetection()">Обнаружение границ Робертса</button>
+        <canvas id="outputCanvas"></canvas>
+      </div>
+<script src="skript.js"></script>
+</body>
+</html>
